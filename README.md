@@ -21,13 +21,11 @@ Eyelash matting results on daily-captured images  from [Unsplash](https://unspla
 - rmi-pytorch
 
 ## Models
-**The pretrained models and dataset can only be used and distributed for noncommercial purposes.**
-
 | Model Name  |    Training Data  | File Size   |MSE|  SAD  | Grad | Conn |
 | :------------- |:------|------------:| :-----|----:|----:|----:|
 | [ResNet34_En_nomixup](https://drive.google.com/open?id=1kNj33D7x7tR-5hXOvxO53QeCEC8ih3-A) | ISLVRC 2012 | 166MB |N/A|N/A|N/A|N/A|
-| [RenderEyelashNet](链接: https://pan.baidu.com/s/1DI6QbpabCi78VVo-NHhn1Q?pwd=w32l 提取码: w32l <br/>--来自百度网盘超级会员v5的分享) |[Render eyelashes](链接: https://pan.baidu.com/s/1LHKPLtPFqSKX1YerK2rm4Q?pwd=uhqg 提取码: uhqg <br/>--来自百度网盘超级会员v5的分享)| 288MB |  - |-|-|-|
-| [EyelashNet](链接: https://pan.baidu.com/s/12SytqouM06VWC4cgAnvUAA?pwd=nj4s 提取码: nj4s <br/>--来自百度网盘超级会员v5的分享) |[Capture eyelashes](链接: https://pan.baidu.com/s/10nvS0jc_B9bZBMXf_h1OcQ?pwd=pn0p 提取码: pn0p <br/>--来自百度网盘超级会员v5的分享)| 288MB |  - |-|-|-|
+| [RenderEyelashNet](https://pan.baidu.com/s/1DI6QbpabCi78VVo-NHhn1Q?pwd=w32l) |[Render eyelashes](https://pan.baidu.com/s/1-lCh9rA_k3UPDn-8z2JL3w?pwd=0jgl)| 288MB |  - |-|-|-|
+| [EyelashNet](https://pan.baidu.com/s/12SytqouM06VWC4cgAnvUAA?pwd=nj4s) |[Capture eyelashes](https://pan.baidu.com/s/10nvS0jc_B9bZBMXf_h1OcQ?pwd=pn0p)| 288MB |  - |-|-|-|
 
 - **ResNet34_En_nomixup**: Model of the customized ResNet-34 backbone trained on ImageNet. Save to `./pretrain/`. Please refer to  [GCA-Matting](https://github.com/Yaoyi-Li/GCA-Matting) for more details.
 - **RenderEyelashNet**: Model trained on the rendered eyelash data. Save to `./checkpoints/RenderEyelashNet/`.
@@ -36,9 +34,7 @@ Eyelash matting results on daily-captured images  from [Unsplash](https://unspla
 ## Train and Evaluate on EyelashNet
 
 ### Data Preparation
-Download  [BaselineTestDataset](链接: https://pan.baidu.com/s/1A0ARlEK7Gg3XpnAJZ-5Ovg?pwd=oewe 提取码: oewe 
---来自百度网盘超级会员v5的分享), [EyelashNet]() , [pupil_bg](链接: https://pan.baidu.com/s/1UniX0g2iuu8A9APBygJ1Uw?pwd=2q3l 提取码: 2q3l 
---来自百度网盘超级会员v5的分享) in `./data/` folder.
+Download  [BaselineTestDataset](https://pan.baidu.com/s/1A0ARlEK7Gg3XpnAJZ-5Ovg?pwd=oewe), [EyelashNet]() , [pupil_bg](https://pan.baidu.com/s/1UniX0g2iuu8A9APBygJ1Uw?pwd=2q3l) in `./data/` folder.
 
 Download the [coco dataset](http://images.cocodataset.org/zips/val2014.zip) in ./data/coco_bg/ folder.
 
@@ -84,10 +80,24 @@ and run the command:
 ./test.sh
 ```
 
+## Agreement
+
+The code, pretrained models and dataset are available for **non-commercial research purposes** only.
 
 ## Acknowledgments
 
-This code borrows heavily from [GCA-Matting](https://github.com/Yaoyi-Li/GCA-Matting).
+This code borrows heavily from [GCA-Matting](https://github.com/Yaoyi-Li/GCA-Matting). 
+
+```
+@inproceedings{li2020natural,
+  title={Natural image matting via guided contextual attention},
+  author={Li, Yaoyi and Lu, Hongtao},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={34},
+  pages={11450--11457},
+  year={2020}
+}
+```
 
 ## Citation
 
@@ -113,4 +123,10 @@ numpages = {17},
 keywords = {dataset, deep learning, eyelash matting}
 }
 ```
+
+## Contact
+
+qinjie_xiao@zju.edu.cn
+
+jin@cad.zju.edu.cn
 
