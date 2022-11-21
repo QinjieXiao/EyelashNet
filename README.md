@@ -24,8 +24,8 @@ Eyelash matting results on daily-captured images  from [Unsplash](https://unspla
 | Model Name  |    Training Data  | File Size   |MSE|  SAD  | Grad | Conn |
 | :------------- |:------|------------:| :-----|----:|----:|----:|
 | [ResNet34_En_nomixup](https://drive.google.com/open?id=1kNj33D7x7tR-5hXOvxO53QeCEC8ih3-A) | ISLVRC 2012 | 166MB |N/A|N/A|N/A|N/A|
-| [RenderEyelashNet](https://pan.baidu.com/s/1DI6QbpabCi78VVo-NHhn1Q?pwd=w32l) |[Render eyelashes](https://pan.baidu.com/s/1-lCh9rA_k3UPDn-8z2JL3w?pwd=0jgl)| 288MB |  - |-|-|-|
-| [EyelashNet](https://pan.baidu.com/s/12SytqouM06VWC4cgAnvUAA?pwd=nj4s) |[Capture eyelashes](https://pan.baidu.com/s/10nvS0jc_B9bZBMXf_h1OcQ?pwd=pn0p)| 288MB |  - |-|-|-|
+| [RenderEyelashNet](https://drive.google.com/drive/folders/1jgVknOmsed9ZjyfsUjLa0vUnXtWBjFOa?usp=share_link) |[Render eyelashes](https://drive.google.com/drive/folders/16Fn20KGOFr7j7qyIjLcCQX6tDbE_LRol?usp=share_link)| 288MB |  - |-|-|-|
+| [EyelashNet](https://drive.google.com/drive/folders/1Feeg1e4tJvfBqDovyapCLjDbno9gRtG6?usp=share_link) |[Capture eyelashes](https://drive.google.com/drive/folders/1apS34-DIokrC-9Nx4z0Zl7Ko9r7bL1HJ?usp=share_link)| 288MB |  - |-|-|-|
 
 - **ResNet34_En_nomixup**: Model of the customized ResNet-34 backbone trained on ImageNet. Save to `./pretrain/`. Please refer to  [GCA-Matting](https://github.com/Yaoyi-Li/GCA-Matting) for more details.
 - **RenderEyelashNet**: Model trained on the rendered eyelash data. Save to `./checkpoints/RenderEyelashNet/`.
@@ -34,7 +34,7 @@ Eyelash matting results on daily-captured images  from [Unsplash](https://unspla
 ## Train and Evaluate on EyelashNet
 
 ### Data Preparation
-Download  [BaselineTestDataset](https://pan.baidu.com/s/1A0ARlEK7Gg3XpnAJZ-5Ovg?pwd=oewe), [EyelashNet]() , [pupil_bg](https://pan.baidu.com/s/1UniX0g2iuu8A9APBygJ1Uw?pwd=2q3l) in `./data/` folder.
+Download  [BaselineTestDataset](https://drive.google.com/drive/folders/1Hf_NpYcNMENovsNBFLxcfxDORkWq7KDN?usp=share_link), [EyelashNet](https://drive.google.com/drive/folders/1apS34-DIokrC-9Nx4z0Zl7Ko9r7bL1HJ?usp=share_link) , [pupil_bg](https://drive.google.com/drive/folders/1Ls4H71023qVmF5A2on7R0YwZs2oPb3vX?usp=share_link) in `./data/` folder.
 
 Download the [coco dataset](http://images.cocodataset.org/zips/val2014.zip) in ./data/coco_bg/ folder.
 
